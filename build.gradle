@@ -1,0 +1,14 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        Properties localProperties = new Properties()
+        def stream = project.rootProject.file('../Common/local_gradle.properties').newDataInputStream()
+        localProperties.load(stream)
+        AGP_VERSION = localProperties.getProperty('AGP_VERSION')
+    }
+}
+
+plugins {
+    id 'com.android.application' version "$AGP_VERSION" apply false
+    id 'com.android.library' version "$AGP_VERSION" apply false
+}

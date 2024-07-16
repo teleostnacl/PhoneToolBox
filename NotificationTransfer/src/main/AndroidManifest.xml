@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application>
+
+        <activity
+            android:name=".activity.NotificationTransferActivity"
+            android:exported="false"
+            android:label="@string/item_notification_transfer" />
+
+        <service
+            android:name=".NotificationTransferService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/item_notification_transfer"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+
+                <!-- 打开关闭通知转发的Action -->
+                <action android:name="com.teleostnacl.phonetoolbox.notificationtransfer.action_open_notification_transfer" />
+                <action android:name="com.teleostnacl.phonetoolbox.notificationtransfer.action_close_notification_transfer" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

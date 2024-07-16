@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.application'
+}
+
+apply from: "../../Common/Android/common.gradle"
+
+static def getVersionNameWithDate(String version) {
+    return version + "." + new Date().format("yy.MM.dd")
+}
+
+android {
+    namespace 'com.teleostnacl.phonetoolbox'
+
+    defaultConfig {
+        versionCode versionCodeWithDate()
+        versionName getVersionNameWithDate("1")
+    }
+
+    buildTypes {
+        release {
+            shrinkResources = true
+            signingConfig signingConfigs.release
+        }
+        debug {
+            versionNameSuffix "d"
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    applicationVariants.configureEach { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            def appName = "PhoneToolBox"
+            def fileName = "${appName}_${android.defaultConfig.versionCode}.apk"
+            output.outputFileName = new File(outputFile.parent, fileName).name
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':PhoneToolBoxLibs')
+    implementation project(path: ':Notification')
+    implementation project(path: ':NotificationTransfer')
+    implementation project(path: ':Weather')
+    implementation project(path: ':Notepad')
+}

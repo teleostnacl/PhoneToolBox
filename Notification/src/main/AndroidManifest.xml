@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <application>
+
+        <service
+            android:name=".service.NotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <intent-filter>
+                <action android:name="com.teleostnacl.phonetoolbox.NotificationService" />
+                <action android:name="com.teleostnacl.phonetoolbox.NotificationService.UPDATE_NOTIFICATION" />
+                <action android:name="com.teleostnacl.phonetoolbox.NotificationService.ATTACHMENT_SERVICE" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

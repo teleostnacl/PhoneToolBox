@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="item_notification_transfer">通知转发</string>
+
+    <string name="notification_transfer_need_notification_permission">使用通知转发功能需要授予通知使用权!\n请选择《%s》并授予通知使用权</string>
+</resources>

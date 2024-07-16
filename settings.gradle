@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "PhoneToolBox"
+include ':app'
+
+// Common库
+include ':Common'
+project(':Common').projectDir = new File("../Common/")
+include ':Common:Android'
+include ':Common:Java'
+include ':Common:JAVAUtils'
+include ':PhoneToolBoxLibs'
+include ':NotificationTransfer'
+include ':Notification'
+include ':Weather'
+include ':Notepad'

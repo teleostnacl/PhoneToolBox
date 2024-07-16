@@ -1,0 +1,18 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply from: "../../Common/Android/common.gradle"
+
+android {
+    namespace 'com.teleostnacl.phonetoolbox.notepad'
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':PhoneToolBoxLibs')
+    annotationProcessor "androidx.room:room-compiler:$ROOM_VERSION"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="notepad_service_title">一言</string>
+    <string name="notepad_service_copy">复制</string>
+    <string name="notepad_service_next_note">新的一句</string>
+    <string name="notepad_service_new_note">生成一言</string>
+</resources>

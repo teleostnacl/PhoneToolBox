@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="notification_service_title">常驻通知</string>
+
+    <string name="notification_service_secret_mode_tips">🎶 原谅我这一生不羁放纵爱自由</string>
+
+</resources>
