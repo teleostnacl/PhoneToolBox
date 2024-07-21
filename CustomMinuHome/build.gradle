@@ -5,7 +5,11 @@ plugins {
 apply from: "../../Common/Android/common.gradle"
 
 android {
-    namespace 'com.teleostnacl.phonetoolbox.customminuHome'
+    namespace 'com.teleostnacl.phonetoolbox.customminuhome'
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
