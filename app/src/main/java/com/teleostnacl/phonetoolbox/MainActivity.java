@@ -14,6 +14,7 @@ import com.teleostnacl.phonetoolbox.lib.adapter.NeumorphCardViewTextViewIconList
 import com.teleostnacl.phonetoolbox.lib.model.NeumorphCardViewTextWithIconModel;
 import com.teleostnacl.phonetoolbox.lib.util.NotificationUtils;
 import com.teleostnacl.phonetoolbox.lib.util.activity.ActivityUtil;
+import com.teleostnacl.phonetoolbox.lib.util.activity.CustomMiuiHomeActivityUtil;
 import com.teleostnacl.phonetoolbox.lib.util.activity.NotificationTransferActivityUtil;
 
 import java.util.ArrayList;
@@ -69,5 +70,8 @@ public class MainActivity extends BaseActivity {
 
         // 通知转发
         models.add(new NeumorphCardViewTextWithIconModel(getString(com.teleostnacl.phonetoolbox.notificationtransfer.R.string.item_notification_transfer), Objects.requireNonNull(AppCompatResources.getDrawable(this, com.teleostnacl.phonetoolbox.notificationtransfer.R.drawable.ic_notification_transfer)), NotificationTransferActivityUtil::startNotificationTransfer));
+
+        // CustomMiuiHome
+        models.add(new NeumorphCardViewTextWithIconModel(getString(com.teleostnacl.phonetoolbox.custommiuihome.R.string.item_custom_miui_home), Objects.requireNonNull(AppCompatResources.getDrawable(this, com.teleostnacl.phonetoolbox.custommiuihome.R.drawable.icon_custom_miui_home)), CustomMiuiHomeActivityUtil::startCustomMiuiHome));
     }
 }

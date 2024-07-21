@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 系统及软件信息 所使用的布局 -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.teleostnacl.common.android.context.ResourcesUtils" />
+
+        <import type="com.teleostnacl.phonetoolbox.custommiuihome.R" />
+
+        <variable
+            name="systemModel"
+            type="com.teleostnacl.phonetoolbox.custommiuihome.model.SystemModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_system_and_software_info"
+        android:orientation="vertical"
+        android:padding="@dimen/main_fragment_card_view_main_item_vertical_margin">
+
+
+        <include
+            layout="@layout/fragment_main_layout_system_and_software_info_item"
+            app:content="@{systemModel.device}"
+            app:title="@{ResourcesUtils.getString(R.string.main_fragment_system_and_software_info_device)}" />
+
+        <include
+            layout="@layout/fragment_main_layout_system_and_software_info_item"
+            app:content="@{systemModel.androidVersion}"
+            app:title="@{ResourcesUtils.getString(R.string.main_fragment_system_and_software_info_android)}" />
+
+        <include
+            layout="@layout/fragment_main_layout_system_and_software_info_item"
+            app:content="@{systemModel.systemVersion}"
+            app:title="@{ResourcesUtils.getString(R.string.main_fragment_system_and_software_info_miui)}" />
+
+        <include
+            layout="@layout/fragment_main_layout_system_and_software_info_item"
+            app:content="@{systemModel.miuiLauncherVersion}"
+            app:title="@{ResourcesUtils.getString(R.string.main_fragment_system_and_software_info_miui_home)}" />
+
+    </LinearLayout>
+</layout>

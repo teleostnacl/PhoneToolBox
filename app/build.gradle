@@ -47,4 +47,5 @@ dependencies {
     implementation project(path: ':NotificationTransfer')
     implementation project(path: ':Weather')
     implementation project(path: ':Notepad')
+    implementation project(path: ':CustomMiuiHome')
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/main_text_color"/>
+
+    <corners
+        android:radius="@dimen/main_fragment_card_view_corner_radius"/>
+</shape>

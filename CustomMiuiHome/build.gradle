@@ -1,0 +1,18 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply from: "../../Common/Android/common.gradle"
+
+android {
+    namespace 'com.teleostnacl.phonetoolbox.custommiuihome'
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':PhoneToolBoxLibs')
+    implementation 'org.apache.commons:commons-compress:1.26.1'
+}

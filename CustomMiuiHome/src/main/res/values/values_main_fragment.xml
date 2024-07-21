@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="main_fragment_summary">概览</string>
+
+    <!-- region Root状态有关的字符串 -->
+    <string name="main_fragment_root_status">ROOT状态</string>
+    <string name="main_fragment_root_granted">Root权限: 已授权</string>
+    <string name="main_fragment_root_not_granted">Root权限: 不可用</string>
+    <string name="main_fragment_root_provider">授权应用: %s</string>
+    <string name="main_fragment_root_provider_none">无</string>
+    <!-- endregion -->
+
+    <!-- region 系统信息有关的字符串-->
+    <string name="main_fragment_system_and_software_info_android">Android版本</string>
+    <string name="main_fragment_system_and_software_info_device">设备型号</string>
+    <string name="main_fragment_system_and_software_info_miui">ROM版本</string>
+    <string name="main_fragment_system_and_software_info_miui_home">MIUI桌面版本</string>
+
+    <string name="main_fragment_system_and_software_info_miui_home_none">未找到miui桌面</string>
+    <!-- endregion -->
+
+    <!-- region 桌面有关的字符串 -->
+    <string name="main_fragment_desktop">桌面</string>
+    <string name="main_fragment_desktop_item"><![CDATA[总共有<font color="#2E7D32"><b>%s</b></font>个可显示的元素]]></string>
+    <string name="main_fragment_application_item"><![CDATA[应用图标元素: <font color="#2E7D32"><b>%s</b></font>]]></string>
+    <string name="main_fragment_folder_item"><![CDATA[文件夹元素: <font color="#2E7D32"><b>%s</b></font>]]></string>
+    <string name="main_fragment_widget_item"><![CDATA[用户小部件元素: <font color="#2E7D32"><b>%s</b></font>]]></string>
+    <string name="main_fragment_system_widget_item"><![CDATA[系统小部件元素: <font color="#2E7D32"><b>%s</b></font>]]></string>
+    <string name="main_fragment_shortcut_item"><![CDATA[Shortcut元素: <font color="#2E7D32"><b>%s</b></font>]]></string>
+    <!-- endregion -->
+
+
+    <string name="main_fragment_open_backup_app">打开备份应用</string>
+    <string name="main_fragment_open_backup_app_tips">请选择备份系统桌面的数据</string>
+    <string name="main_fragment_choose_backup_file">选择备份文件</string>
+    <string name="main_fragment_choose_backup_file_tips">请选择刚刚备份的桌面数据文件: MIUI/backup/AllBackup/时间/系统桌面(com.miui.home).bak</string>
+    <string name="main_fragment_choose_backup_file_failed">请选择数据备份文件!</string>
+    <string name="main_fragment_choose_backup_file_check_failed">格式检查有误! 请选择正确的数据备份文件!</string>
+    <string name="main_fragment_choose_backup_file_loading">正在读取并检查备份文件</string>
+
+    <string name="main_fragment_choose_modify">整理</string>
+    <string name="main_fragment_choose_save">保存</string>
+
+    <!-- 页面周围的padding -->
+    <dimen name="main_fragment_padding">16dp</dimen>
+    <!-- cardView的padding -->
+    <dimen name="main_fragment_card_view_padding">8dp</dimen>
+    <!-- card view的圆角值 -->
+    <dimen name="main_fragment_card_view_corner_radius">8dp</dimen>
+    <!-- card view的阴影值 -->
+    <dimen name="main_fragment_card_view_elevation">8dp</dimen>
+    <!-- card view中各主项间的padding -->
+    <dimen name="main_fragment_card_view_main_item_vertical_margin">16dp</dimen>
+    <!-- cardView中标题与项目间的距离 -->
+    <dimen name="main_fragment_card_view_main_to_item_margin">8dp</dimen>
+    <!-- cardView中子项缩进的长度 -->
+    <dimen name="main_fragment_item_horizontal_margin">12dp</dimen>
+    <!-- 可点击项的padding值 -->
+    <dimen name="main_fragment_clickable_item_padding">24dp</dimen>
+    <!-- 可点击项的padding值 -->
+    <dimen name="main_fragment_divider_padding">12dp</dimen>
+
+    <color name="main_fragment_root_status_granted_color">#0061a6</color>
+    <color name="main_fragment_root_status_not_granted_color">#fd6b6d</color>
+</resources>
