@@ -14,5 +14,5 @@ android {
 
 dependencies {
     implementation project(path: ':PhoneToolBoxLibs')
-    implementation 'org.apache.commons:commons-compress:1.26.1'
+    implementation 'org.apache.commons:commons-compress:1.27.1'
 }
