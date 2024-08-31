@@ -11,14 +11,15 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.teleostnacl.phonetoolbox.custommiuihome.model.MainViewModel;
 
-public class MainActivity extends AppCompatActivity {
+public class CustomMiuiHomeActivity extends AppCompatActivity {
 
     private MainViewModel mainViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        setContentView(R.layout.activity_custom_miui_home);
 
         mainViewModel = new ViewModelProvider(this).get(MainViewModel.class);
 
@@ -29,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         textView.post(() -> {
             textView.getPaint().setShader(new LinearGradient(
                     0, 0, textView.getWidth() / 2.0f, textView.getHeight() / 2.0f,
-                    getColor(R.color.main_toolbar_title_miui_home_start_color),
-                    getColor(R.color.main_toolbar_title_miui_home_end_color),
+                    getColor(R.color.custom_miui_home_main_toolbar_title_miui_home_start_color),
+                    getColor(R.color.custom_miui_home_main_toolbar_title_miui_home_end_color),
                     Shader.TileMode.CLAMP));
 
             findViewById(R.id.main_toolbar_title_custom).setVisibility(View.VISIBLE);

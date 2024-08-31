@@ -19,7 +19,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.teleostnacl.common.android.context.ToastUtils;
 import com.teleostnacl.common.android.log.Logger;
 import com.teleostnacl.phonetoolbox.custommiuihome.R;
-import com.teleostnacl.phonetoolbox.custommiuihome.databinding.FragmentMainBinding;
+import com.teleostnacl.phonetoolbox.custommiuihome.databinding.FragmentCustomMiuiHomeMainBinding;
 import com.teleostnacl.phonetoolbox.custommiuihome.model.MainViewModel;
 
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
@@ -31,7 +31,7 @@ public class MainFragment extends Fragment {
     private static final String TAG = "MainFragment";
 
     private MainViewModel mainViewModel;
-    private FragmentMainBinding binding;
+    private FragmentCustomMiuiHomeMainBinding binding;
 
     private final CompositeDisposable disposable = new CompositeDisposable();
 
@@ -79,7 +79,7 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_main, container, false);
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_custom_miui_home_main, container, false);
 
         // 打开备份应用
         binding.mainFragmentOpenBackupApp.setOnClickListener(v -> {

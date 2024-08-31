@@ -26,9 +26,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/main_fragment_summary"
-                android:textColor="@color/main_text_color"
-                android:textSize="@dimen/title_text_size" />
+                android:text="@string/custom_miui_home_main_fragment_summary"
+                android:textColor="@color/custom_miui_home_main_text_color"
+                android:textSize="@dimen/custom_miui_home_title_text_size" />
 
             <!-- endregion -->
 
@@ -39,8 +39,8 @@
                 android:layout_marginTop="@dimen/main_fragment_card_view_main_item_vertical_margin"
                 android:layout_marginBottom="@dimen/main_fragment_card_view_main_to_item_margin"
                 android:text="@string/main_fragment_desktop"
-                android:textColor="@color/main_text_color"
-                android:textSize="@dimen/subtitle_text_size"
+                android:textColor="@color/custom_miui_home_main_text_color"
+                android:textSize="@dimen/custom_miui_home_subtitle_text_size"
                 android:textStyle="bold" />
 
             <!-- 可显示的元素 -->
@@ -48,8 +48,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{summaryModel.desktopModel.itemSumModel.itemSum}"
-                android:textColor="@color/main_text_color"
-                android:textSize="@dimen/content_text_size" />
+                android:textColor="@color/custom_miui_home_main_text_color"
+                android:textSize="@dimen/custom_miui_home_content_text_size" />
 
             <!-- 应用图标元素 -->
             <TextView
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/main_fragment_item_horizontal_margin"
                 android:text="@{summaryModel.desktopModel.itemSumModel.commonItemSum}"
-                android:textSize="@dimen/content_text_size" />
+                android:textSize="@dimen/custom_miui_home_content_text_size" />
 
             <!-- 文件夹元素 -->
             <TextView
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/main_fragment_item_horizontal_margin"
                 android:text="@{summaryModel.desktopModel.itemSumModel.folderItemSum}"
-                android:textSize="@dimen/content_text_size" />
+                android:textSize="@dimen/custom_miui_home_content_text_size" />
 
             <!-- 小部件元素 -->
             <TextView
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/main_fragment_item_horizontal_margin"
                 android:text="@{summaryModel.desktopModel.itemSumModel.widgetItemSum}"
-                android:textSize="@dimen/content_text_size" />
+                android:textSize="@dimen/custom_miui_home_content_text_size" />
 
             <!-- 系统小部件元素 -->
             <TextView
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/main_fragment_item_horizontal_margin"
                 android:text="@{summaryModel.desktopModel.itemSumModel.systemWidgetSum}"
-                android:textSize="@dimen/content_text_size" />
+                android:textSize="@dimen/custom_miui_home_content_text_size" />
 
             <!-- shortcut元素 -->
             <TextView
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/main_fragment_item_horizontal_margin"
                 android:text="@{summaryModel.desktopModel.itemSumModel.shortcutItemSum}"
-                android:textSize="@dimen/content_text_size" />
+                android:textSize="@dimen/custom_miui_home_content_text_size" />
             <!-- endregion -->
 
         </LinearLayout>

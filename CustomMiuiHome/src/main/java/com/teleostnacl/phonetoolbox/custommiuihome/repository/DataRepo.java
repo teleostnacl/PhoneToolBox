@@ -468,7 +468,7 @@ public class DataRepo {
      * @return 默认的应用图标
      */
     private static Drawable getDefaultApplicationIcon() {
-        return ContextCompat.getDrawable(ContextUtils.getContext(), R.drawable.default_application_icon);
+        return ContextCompat.getDrawable(ContextUtils.getContext(), R.drawable.custom_miui_home_default_application_icon);
     }
 
 }

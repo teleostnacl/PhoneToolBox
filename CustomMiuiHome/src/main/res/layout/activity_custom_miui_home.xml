@@ -27,9 +27,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/main_toolbar_custom"
-                    android:textColor="@color/main_toolbar_title_custom_color"
-                    android:textSize="@dimen/main_toolbar_title_text_size"
+                    android:text="@string/custom_miui_home_main_toolbar_custom"
+                    android:textColor="@color/custom_miui_home_main_toolbar_title_custom_color"
+                    android:textSize="@dimen/custom_miui_home_main_toolbar_title_text_size"
                     android:textStyle="bold"
                     android:visibility="invisible" />
 
@@ -37,8 +37,8 @@
                     android:id="@+id/main_toolbar_title_miui_home"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/main_toolbar_miui_home"
-                    android:textSize="@dimen/main_toolbar_title_text_size"
+                    android:text="@string/custom_miui_home_main_toolbar_miui_home"
+                    android:textSize="@dimen/custom_miui_home_main_toolbar_title_text_size"
                     android:textStyle="bold"
                     android:visibility="invisible" />
             </LinearLayout>
@@ -52,5 +52,5 @@
         android:layout_height="match_parent"
         app:defaultNavHost="true"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-        app:navGraph="@navigation/main_nav_graph" />
+        app:navGraph="@navigation/custom_miui_home_main_nav_graph" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

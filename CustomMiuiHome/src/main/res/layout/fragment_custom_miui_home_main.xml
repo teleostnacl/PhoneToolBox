@@ -23,7 +23,7 @@
 
             <!-- 系统及软件信息 -->
             <include
-                layout="@layout/fragment_main_layout_system_and_software_info"
+                layout="@layout/fragment_custom_miui_home_main_layout_system_and_software_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/main_fragment_card_view_main_item_vertical_margin"
@@ -48,8 +48,8 @@
                         android:clickable="true"
                         android:padding="@dimen/main_fragment_clickable_item_padding"
                         android:text="@string/main_fragment_open_backup_app"
-                        android:textColor="@color/main_text_color"
-                        android:textSize="@dimen/subtitle_text_size" />
+                        android:textColor="@color/custom_miui_home_main_text_color"
+                        android:textSize="@dimen/custom_miui_home_subtitle_text_size" />
 
                     <com.google.android.material.divider.MaterialDivider
                         android:layout_width="match_parent"
@@ -64,8 +64,8 @@
                         android:clickable="true"
                         android:padding="@dimen/main_fragment_clickable_item_padding"
                         android:text="@string/main_fragment_choose_backup_file"
-                        android:textColor="@color/main_text_color"
-                        android:textSize="@dimen/subtitle_text_size" />
+                        android:textColor="@color/custom_miui_home_main_text_color"
+                        android:textSize="@dimen/custom_miui_home_subtitle_text_size" />
 
                     <com.google.android.material.divider.MaterialDivider
                         android:layout_width="match_parent"
@@ -80,8 +80,8 @@
                         android:clickable="true"
                         android:padding="@dimen/main_fragment_clickable_item_padding"
                         android:text="@string/main_fragment_choose_modify"
-                        android:textColor="@color/main_text_color"
-                        android:textSize="@dimen/subtitle_text_size" />
+                        android:textColor="@color/custom_miui_home_main_text_color"
+                        android:textSize="@dimen/custom_miui_home_subtitle_text_size" />
 
                     <com.google.android.material.divider.MaterialDivider
                         android:layout_width="match_parent"
@@ -96,8 +96,8 @@
                         android:clickable="true"
                         android:padding="@dimen/main_fragment_clickable_item_padding"
                         android:text="@string/main_fragment_choose_modify"
-                        android:textColor="@color/main_text_color"
-                        android:textSize="@dimen/subtitle_text_size" />
+                        android:textColor="@color/custom_miui_home_main_text_color"
+                        android:textSize="@dimen/custom_miui_home_subtitle_text_size" />
 
                 </LinearLayout>
 

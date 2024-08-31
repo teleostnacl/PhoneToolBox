@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="main_fragment_summary">概览</string>
-
-    <!-- region Root状态有关的字符串 -->
-    <string name="main_fragment_root_status">ROOT状态</string>
-    <string name="main_fragment_root_granted">Root权限: 已授权</string>
-    <string name="main_fragment_root_not_granted">Root权限: 不可用</string>
-    <string name="main_fragment_root_provider">授权应用: %s</string>
-    <string name="main_fragment_root_provider_none">无</string>
-    <!-- endregion -->
+    <string name="custom_miui_home_main_fragment_summary">概览</string>
 
     <!-- region 系统信息有关的字符串-->
     <string name="main_fragment_system_and_software_info_android">Android版本</string>
@@ -59,7 +51,4 @@
     <dimen name="main_fragment_clickable_item_padding">24dp</dimen>
     <!-- 可点击项的padding值 -->
     <dimen name="main_fragment_divider_padding">12dp</dimen>
-
-    <color name="main_fragment_root_status_granted_color">#0061a6</color>
-    <color name="main_fragment_root_status_not_granted_color">#fd6b6d</color>
 </resources>

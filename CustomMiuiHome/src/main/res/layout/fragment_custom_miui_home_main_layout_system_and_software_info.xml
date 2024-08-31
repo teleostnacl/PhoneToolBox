@@ -17,28 +17,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_system_and_software_info"
+        android:background="@drawable/custom_miui_home_background_system_and_software_info"
         android:orientation="vertical"
         android:padding="@dimen/main_fragment_card_view_main_item_vertical_margin">
 
 
         <include
-            layout="@layout/fragment_main_layout_system_and_software_info_item"
+            layout="@layout/fragment_custom_miui_home_main_layout_system_and_software_info_item"
             app:content="@{systemModel.device}"
             app:title="@{ResourcesUtils.getString(R.string.main_fragment_system_and_software_info_device)}" />
 
         <include
-            layout="@layout/fragment_main_layout_system_and_software_info_item"
+            layout="@layout/fragment_custom_miui_home_main_layout_system_and_software_info_item"
             app:content="@{systemModel.androidVersion}"
             app:title="@{ResourcesUtils.getString(R.string.main_fragment_system_and_software_info_android)}" />
 
         <include
-            layout="@layout/fragment_main_layout_system_and_software_info_item"
+            layout="@layout/fragment_custom_miui_home_main_layout_system_and_software_info_item"
             app:content="@{systemModel.systemVersion}"
             app:title="@{ResourcesUtils.getString(R.string.main_fragment_system_and_software_info_miui)}" />
 
         <include
-            layout="@layout/fragment_main_layout_system_and_software_info_item"
+            layout="@layout/fragment_custom_miui_home_main_layout_system_and_software_info_item"
             app:content="@{systemModel.miuiLauncherVersion}"
             app:title="@{ResourcesUtils.getString(R.string.main_fragment_system_and_software_info_miui_home)}" />
 

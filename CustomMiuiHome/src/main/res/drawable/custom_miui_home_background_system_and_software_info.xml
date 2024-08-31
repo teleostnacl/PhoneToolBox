@@ -4,7 +4,7 @@
 
     <stroke
         android:width="1dp"
-        android:color="@color/main_text_color"/>
+        android:color="@color/custom_miui_home_main_text_color"/>
 
     <corners
         android:radius="@dimen/main_fragment_card_view_corner_radius"/>

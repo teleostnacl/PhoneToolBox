@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="main_background">#E8F5E9</color>
-
-    <color name="main_text_color">#1a1a1a</color>
-
-    <color name="main_text_color_light">@color/white</color>
+    <color name="custom_miui_home_main_text_color">#1a1a1a</color>
 </resources>

@@ -9,5 +9,5 @@
         android:id="@+id/mainFragment"
         android:name="com.teleostnacl.phonetoolbox.custommiuihome.fragment.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_custom_miui_home_main" />
 </navigation>

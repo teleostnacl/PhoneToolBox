@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="main_toolbar_custom" translatable="false">Custom</string>
-    <string name="main_toolbar_miui_home" translatable="false">MiuiHome</string>
+    <string name="custom_miui_home_main_toolbar_custom" translatable="false">Custom</string>
+    <string name="custom_miui_home_main_toolbar_miui_home" translatable="false">MiuiHome</string>
 
-    <dimen name="main_toolbar_title_text_size">22sp</dimen>
+    <dimen name="custom_miui_home_main_toolbar_title_text_size">22sp</dimen>
 
-    <color name="main_toolbar_title_custom_color">#2E7D32</color>
+    <color name="custom_miui_home_main_toolbar_title_custom_color">#2E7D32</color>
 
-    <color name="main_toolbar_title_miui_home_start_color">#ff9391ff</color>
-    <color name="main_toolbar_title_miui_home_end_color">#ff7862ff</color>
+    <color name="custom_miui_home_main_toolbar_title_miui_home_start_color">#ff9391ff</color>
+    <color name="custom_miui_home_main_toolbar_title_miui_home_end_color">#ff7862ff</color>
 </resources>
