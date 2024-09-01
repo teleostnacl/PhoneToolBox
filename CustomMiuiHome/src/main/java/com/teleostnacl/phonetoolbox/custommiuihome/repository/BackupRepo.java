@@ -202,19 +202,6 @@ public class BackupRepo {
         } finally {
             IOUtils.close(tarArchiveInputStream, tarFileInputStream);
         }
-
-//        try {
-//            Process process = Runtime.getRuntime().exec("tar -xvf " + file.getAbsolutePath() +
-//                    " -C " + file.getAbsolutePath());
-//            int exitValue = process.waitFor();
-//            return exitValue == 0;
-//        } catch (Exception e) {
-//            Logger.v(TAG, "decompressBackupFile() decompress failed e = " + e.getMessage());
-//            e.printStackTrace();
-//            return false;
-//        }
-
-
     }
 
 }
